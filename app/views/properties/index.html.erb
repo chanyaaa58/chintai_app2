@@ -24,7 +24,7 @@
         <td><%= property.memo %></td>
         <td><%= link_to '詳細', property %></td>
         <td><%= link_to '編集', edit_property_path(property) %></td>
-        <td><%= link_to '削除', property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '削除', property, method: :delete, data: { confirm: '本当に削除しても良いですか？' } %></td>
       </tr>
     <% end %>
   </tbody>
